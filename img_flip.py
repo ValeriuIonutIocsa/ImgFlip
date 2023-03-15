@@ -21,7 +21,7 @@ for path in os.listdir(folderPath):
         if filePath.endswith('.jpg') or filePath.endswith('.png'):
             filePathList.append(filePath)
 
-executablePath = r'D:\IVI_MISC\Apps\IrfanView\App\IrfanView64\i_view64.exe'
+executablePath = 'D:\\IVI_MISC\\Apps\\IrfanView\\App\\IrfanView64\\i_view64.exe'
 for filePath in filePathList:
     sys.stdout.write('processing file: ' + filePath + '\n')
     command = [executablePath, filePath, '/hflip', '/convert=' + filePath]
